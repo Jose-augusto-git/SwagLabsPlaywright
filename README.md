@@ -67,3 +67,8 @@ O arquivo `login.spec.ts` contempla os seguintes cenários validando a jornada c
 * **CT04** - Deixar os campos de usuário e senha em branco
 * **CT05** - Informar usuário validado e não informar a senha
 * **CT06** - Não informar o usuário e informar a senha correta
+
+## Gif mostrando o teste realizado com sucesso
+
+![12 03 2026_15 43 59_REC](https://github.com/user-attachments/assets/db3e80ec-bcbd-41c2-845d-36226c328acf)
+
