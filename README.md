@@ -72,3 +72,8 @@ O arquivo `login.spec.ts` contempla os seguintes cenários validando a jornada c
 
 ![12 03 2026_15 43 59_REC](https://github.com/user-attachments/assets/db3e80ec-bcbd-41c2-845d-36226c328acf)
 
+## Relatório de testes 
+
+<img width="1600" height="767" alt="image" src="https://github.com/user-attachments/assets/40ecbaae-187f-496a-9b86-ac1fde51bd13" />
+
+
