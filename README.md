@@ -82,3 +82,7 @@ npx stryker run
 ```
 
 Após a execução, o Stryker irá gerar um relatório completo em HTML localizado em `reports/mutation/mutation.html`, onde você poderá visualizar com detalhes quais mutações "sobreviveram" (o que indica uma possível falha na cobertura de testes) e quais foram "mortas".
+
+## Relatório de testes 
+
+<img width="1600" height="767" alt="image" src="https://github.com/user-attachments/assets/40ecbaae-187f-496a-9b86-ac1fde51bd13" />
