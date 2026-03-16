@@ -19,6 +19,7 @@ export class LoginPage{
 
     async goto(){
         await this.page.goto(URL)
+        await expect(this.page).toHaveURL(URL)
     }
 
     async login(usuario: string, senha: string){

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.stryker-mutator.io/config/2.0.0/schema.json",
+"mutate": [
+  "e2e/**/*.ts",
+  "!e2e/**/*.spec.ts"
+],
+  "testRunner": "command",
+  "commandRunner": {
+    "command": "npx playwright test"
+  },
+  "reporters": ["html", "clear-text", "progress"],
+  "concurrency": 4,
+  "timeoutMS": 30000,
+  "thresholds": { "high": 80, "low": 60, "break": 0 }
+}

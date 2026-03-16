@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { test,expect } from './fixtures/baseTest';
 import { URL } from './page/urlPage';
 
