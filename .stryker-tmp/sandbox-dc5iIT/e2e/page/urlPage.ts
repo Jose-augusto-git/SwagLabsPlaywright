@@ -45,22 +45,4 @@ function stryMutAct_9fa48(id) {
   stryMutAct_9fa48 = isActive;
   return isActive(id);
 }
-import { test as base } from "@playwright/test";
-import { LoginPage } from "../page/loginPage";
-type MinhaFixtures = {
-  loginPage: LoginPage;
-};
-export const test = base.extend<MinhaFixtures>(stryMutAct_9fa48("0") ? {} : (stryCov_9fa48("0"), {
-  loginPage: async ({
-    page
-  }, use) => {
-    if (stryMutAct_9fa48("1")) {
-      {}
-    } else {
-      stryCov_9fa48("1");
-      const loginPage = new LoginPage(page);
-      await use(loginPage);
-    }
-  }
-}));
-export { expect } from '@playwright/test';
+export const URL = stryMutAct_9fa48("8") ? "" : (stryCov_9fa48("8"), 'https://www.saucedemo.com/');

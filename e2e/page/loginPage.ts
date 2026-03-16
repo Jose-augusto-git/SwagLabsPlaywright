@@ -30,10 +30,11 @@ export class LoginPage{
 
     async verificarMensagemLoginInvalido(mensagemEsperada: string) {
         // Verifica se o elemento está visível na tela
-        await expect(this.mensagemUsuarioSenhaInvalido).toBeVisible();
-        
+        const locator = this.mensagemUsuarioSenhaInvalido;
+        await expect(locator).toBeVisible();
         // Verifica se o texto do elemento é exatamente o esperado
-        await expect(this.mensagemUsuarioSenhaInvalido).toHaveText(mensagemEsperada);
+        await expect(locator).toHaveText(mensagemEsperada);
+        return  locator;
     }
 
 

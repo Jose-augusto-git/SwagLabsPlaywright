@@ -1,8 +1,7 @@
 import { test,expect } from './fixtures/baseTest';
-import { URL } from './page/urlPage';
 
-test.beforeEach(async ({ page }) => {
-  await page.goto(URL);
+test.beforeEach(async ({ loginPage }) => {
+  await loginPage.goto();
 });  
 
 test('CT01 - Informar usuario e senha valido', async ({ loginPage,page }) => {

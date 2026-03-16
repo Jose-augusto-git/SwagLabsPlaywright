@@ -72,3 +72,17 @@ O arquivo `login.spec.ts` contempla os seguintes cenários validando a jornada c
 
 ![12 03 2026_15 43 59_REC](https://github.com/user-attachments/assets/db3e80ec-bcbd-41c2-845d-36226c328acf)
 
+## 👾 Testes de Mutação com Stryker
+
+Este projeto possui o **Stryker Mutator** configurado para avaliar a qualidade e eficácia da suíte de testes. O Stryker insere falhas propositais (mutantes) no código para ver se os testes atuais são capazes de detectar essas falhas.
+
+**Para rodar os testes de mutação, execute:**
+```bash
+npx stryker run
+```
+
+Após a execução, o Stryker irá gerar um relatório completo em HTML localizado em `reports/mutation/mutation.html`, onde você poderá visualizar com detalhes quais mutações "sobreviveram" (o que indica uma possível falha na cobertura de testes) e quais foram "mortas".
+
+## Relatório de testes 
+
+<img width="1600" height="767" alt="image" src="https://github.com/user-attachments/assets/40ecbaae-187f-496a-9b86-ac1fde51bd13" />

@@ -54,46 +54,47 @@ export class LoginPage {
   readonly botaoLogin: Locator;
   readonly mensagemUsuarioSenhaInvalido: Locator;
   constructor(page: Page) {
-    if (stryMutAct_9fa48("2")) {
+    if (stryMutAct_9fa48("0")) {
       {}
     } else {
-      stryCov_9fa48("2");
+      stryCov_9fa48("0");
       this.page = page;
-      this.campoUsuario = page.locator(stryMutAct_9fa48("3") ? "" : (stryCov_9fa48("3"), '#user-name'));
-      this.campoSenha = page.locator(stryMutAct_9fa48("4") ? "" : (stryCov_9fa48("4"), '#password'));
-      this.botaoLogin = page.locator(stryMutAct_9fa48("5") ? "" : (stryCov_9fa48("5"), '#login-button'));
-      this.mensagemUsuarioSenhaInvalido = page.locator(stryMutAct_9fa48("6") ? "" : (stryCov_9fa48("6"), '.error-message-container'));
+      this.campoUsuario = page.locator(stryMutAct_9fa48("1") ? "" : (stryCov_9fa48("1"), '#user-name'));
+      this.campoSenha = page.locator(stryMutAct_9fa48("2") ? "" : (stryCov_9fa48("2"), '#password'));
+      this.botaoLogin = page.locator(stryMutAct_9fa48("3") ? "" : (stryCov_9fa48("3"), '#login-button'));
+      this.mensagemUsuarioSenhaInvalido = page.locator(stryMutAct_9fa48("4") ? "" : (stryCov_9fa48("4"), '.error-message-container'));
     }
   }
   async goto() {
-    if (stryMutAct_9fa48("7")) {
+    if (stryMutAct_9fa48("5")) {
       {}
     } else {
-      stryCov_9fa48("7");
+      stryCov_9fa48("5");
       await this.page.goto(URL);
       await expect(this.page).toHaveURL(URL);
     }
   }
   async login(usuario: string, senha: string) {
-    if (stryMutAct_9fa48("8")) {
+    if (stryMutAct_9fa48("6")) {
       {}
     } else {
-      stryCov_9fa48("8");
+      stryCov_9fa48("6");
       await this.campoUsuario.fill(usuario);
       await this.campoSenha.fill(senha);
       await this.botaoLogin.click();
     }
   }
   async verificarMensagemLoginInvalido(mensagemEsperada: string) {
-    if (stryMutAct_9fa48("9")) {
+    if (stryMutAct_9fa48("7")) {
       {}
     } else {
-      stryCov_9fa48("9");
+      stryCov_9fa48("7");
       // Verifica se o elemento está visível na tela
-      await expect(this.mensagemUsuarioSenhaInvalido).toBeVisible();
-
+      const locator = this.mensagemUsuarioSenhaInvalido;
+      await expect(locator).toBeVisible();
       // Verifica se o texto do elemento é exatamente o esperado
-      await expect(this.mensagemUsuarioSenhaInvalido).toHaveText(mensagemEsperada);
+      await expect(locator).toHaveText(mensagemEsperada);
+      return locator;
     }
   }
 }
