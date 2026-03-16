@@ -81,6 +81,8 @@ Este projeto possui o **Stryker Mutator** configurado para avaliar a qualidade e
 npx stryker run
 ```
 
+<img width="1539" height="707" alt="16 03 2026_14 54 21_REC" src="https://github.com/user-attachments/assets/f4817891-205d-4ee1-a6cf-7e09b35206ec" />
+
 Após a execução, o Stryker irá gerar um relatório completo em HTML localizado em `reports/mutation/mutation.html`, onde você poderá visualizar com detalhes quais mutações "sobreviveram" (o que indica uma possível falha na cobertura de testes) e quais foram "mortas".
 
 ## Relatório de testes 
