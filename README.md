@@ -82,6 +82,10 @@ Este projeto está configurado para gerar relatórios detalhados com o Allure Re
 * **CT05** - Informar usuário validado e não informar a senha
 * **CT06** - Não informar o usuário e informar a senha correta
 
+### Gif mostrando o teste realizado com sucesso
+
+![12 03 2026_15 43 59_REC](https://github.com/user-attachments/assets/db3e80ec-bcbd-41c2-845d-36226c328acf)
+
 ### Inventário (`inventario.spec.ts`)
 * **CT01** - Clicar no botão "Add to cart" em um produto
 * **CT02** - Clicar no botão "Remove" em um produto adicionado no carrinho
@@ -99,9 +103,17 @@ O **Stryker Mutator** é usado para avaliar a qualidade da suíte de testes inse
 npx stryker run
 ```
 
-O relatório em HTML fica localizado em `reports/mutation/mutation.html`.
+<img width="1539" height="707" alt="16 03 2026_14 54 21_REC" src="https://github.com/user-attachments/assets/f4817891-205d-4ee1-a6cf-7e09b35206ec" />
+
+O relatório em HTML fica localizado em `reports/mutation/mutation.html`, onde você poderá visualizar quais mutações "sobreviveram" e quais foram "mortas".
+
+<img width="1600" height="763" alt="image" src="https://github.com/user-attachments/assets/308cf3c2-99f2-4bf0-bcb7-2b537df1c41b" />
 
 ## ⚙️ Integração Contínua (CI)
 
 O projeto possui um workflow configurado no **GitHub Actions** (`.github/workflows/playwright.yml`) que executa os testes automaticamente em cada `push` ou `pull_request` nas branches `main` e `master`.
+
+## Relatório de testes 
+
+<img width="1600" height="767" alt="image" src="https://github.com/user-attachments/assets/40ecbaae-187f-496a-9b86-ac1fde51bd13" />
 
