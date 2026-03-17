@@ -1,0 +1,1 @@
+Valores convertidos em número: [ undefined, undefined, undefined, undefined, undefined, undefined ]

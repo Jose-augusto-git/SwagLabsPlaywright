@@ -1,0 +1,1 @@
+Valores convertidos em número: [ NaN, NaN, NaN, NaN, NaN, NaN ]
